@@ -1,0 +1,318 @@
+# Copyright (C) 2013 Twitter's Bootstrap Shortcodes Ultimate
+# This file is distributed under the same license as the Twitter's Bootstrap Shortcodes Ultimate package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitter's Bootstrap Shortcodes Ultimate 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/twitterbootstrap-shortcodes-ultimate\n"
+"POT-Creation-Date: 2013-11-02 21:59:39+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-11-02 23:02+0100\n"
+"Last-Translator: Bass Jobsen <bass@w3masters.nl>\n"
+"Language-Team: \n"
+
+#: inc/jbst.php:20
+msgid "Button Group"
+msgstr ""
+
+#: inc/jbst.php:35
+msgid "Button Text"
+msgstr ""
+
+#: inc/jbst.php:40
+msgid "Button Link"
+msgstr ""
+
+#: inc/jbst.php:51
+#: inc/jbst.php:458
+#: inc/jbst.php:541
+msgid "Button Size"
+msgstr ""
+
+#: inc/jbst.php:65
+#: inc/jbst.php:471
+#: inc/jbst.php:554
+msgid "Button Style (color)"
+msgstr ""
+
+#: inc/jbst.php:72
+#: inc/jbst.php:515
+msgid "Button Icon"
+msgstr ""
+
+#: inc/jbst.php:82
+#: inc/jbst.php:523
+msgid "Icon Color"
+msgstr ""
+
+#: inc/jbst.php:92
+msgid "Button Link Target"
+msgstr ""
+
+#: inc/jbst.php:96
+#: inc/jbst.php:475
+#: inc/jbst.php:558
+msgid "3 sizes, 7 colors and 140 icons"
+msgstr ""
+
+#: inc/jbst.php:120
+msgid "Label Style (color)"
+msgstr ""
+
+#: inc/jbst.php:125
+msgid "Label Text"
+msgstr ""
+
+#: inc/jbst.php:129
+#: inc/jbst.php:161
+msgid "Text surrounded by a solid color for importance."
+msgstr ""
+
+#: inc/jbst.php:152
+msgid "Badge Style (color)"
+msgstr ""
+
+#: inc/jbst.php:157
+msgid "Badge Text"
+msgstr ""
+
+#: inc/jbst.php:179
+msgid "Scroll"
+msgstr ""
+
+#: inc/jbst.php:183
+msgid "Code goes here"
+msgstr ""
+
+#: inc/jbst.php:184
+msgid "Code box for showing code."
+msgstr ""
+
+#: inc/jbst.php:198
+msgid "Row"
+msgstr ""
+
+#: inc/jbst.php:225
+msgid "Column Span."
+msgstr ""
+
+#: inc/jbst.php:229
+#: inc/jbst.php:254
+#: inc/jbst.php:319
+#: inc/jbst.php:696
+msgid "Content goes here"
+msgstr ""
+
+#: inc/jbst.php:230
+msgid "Empty space with adjustable height"
+msgstr ""
+
+#: inc/jbst.php:250
+msgid "text alignment"
+msgstr ""
+
+#: inc/jbst.php:255
+msgid "Lead Paragraph"
+msgstr ""
+
+#: inc/jbst.php:270
+msgid "Heading Text"
+msgstr ""
+
+#: inc/jbst.php:275
+msgid "Sub Text"
+msgstr ""
+
+#: inc/jbst.php:279
+msgid "Page Header."
+msgstr ""
+
+#: inc/jbst.php:293
+msgid "Divider"
+msgstr ""
+
+#: inc/jbst.php:308
+msgid "Background color"
+msgstr ""
+
+#: inc/jbst.php:314
+msgid "Text Color"
+msgstr ""
+
+#: inc/jbst.php:320
+msgid "A big header area for the top of your page."
+msgstr ""
+
+#: inc/jbst.php:336
+msgid "Alert Heading"
+msgstr ""
+
+#: inc/jbst.php:345
+msgid "Alert Style"
+msgstr ""
+
+#: inc/jbst.php:353
+msgid "Block Padding"
+msgstr ""
+
+#: inc/jbst.php:361
+msgid "Close Button"
+msgstr ""
+
+#: inc/jbst.php:365
+msgid "Alert box with optional padding and close button"
+msgstr ""
+
+#: inc/jbst.php:381
+msgid "Blockquote Cite"
+msgstr ""
+
+#: inc/jbst.php:390
+msgid "Float (causes text wrap)"
+msgstr ""
+
+#: inc/jbst.php:398
+msgid "Text Align"
+msgstr ""
+
+#: inc/jbst.php:402
+msgid "Blockquote quotation with citation"
+msgstr ""
+
+#: inc/jbst.php:417
+#: inc/jbst.php:490
+msgid "Text"
+msgstr ""
+
+#: inc/jbst.php:422
+msgid "Popover Title"
+msgstr ""
+
+#: inc/jbst.php:427
+msgid "Popover description"
+msgstr ""
+
+#: inc/jbst.php:432
+#: inc/jbst.php:500
+msgid "Link Url"
+msgstr ""
+
+#: inc/jbst.php:440
+#: inc/jbst.php:508
+msgid "Link Target"
+msgstr ""
+
+#: inc/jbst.php:448
+#: inc/jbst.php:531
+msgid "Button"
+msgstr ""
+
+#: inc/jbst.php:495
+msgid "Tooltip description"
+msgstr ""
+
+#: inc/jbst.php:573
+msgid "Percentage of Progress"
+msgstr ""
+
+#: inc/jbst.php:581
+msgid "Striped"
+msgstr ""
+
+#: inc/jbst.php:589
+msgid "Animate (requires striped)"
+msgstr ""
+
+#: inc/jbst.php:600
+msgid "Style (color)"
+msgstr ""
+
+#: inc/jbst.php:604
+msgid "A Progress bar"
+msgstr ""
+
+#: inc/jbst.php:619
+msgid "Include specific image IDs"
+msgstr ""
+
+#: inc/jbst.php:624
+msgid "Exclude specific image IDs"
+msgstr ""
+
+#: inc/jbst.php:628
+msgid "A Carousel of your gallery's images"
+msgstr ""
+
+#: inc/jbst.php:646
+msgid "Style"
+msgstr ""
+
+#: inc/jbst.php:654
+msgid "Stacked Vertically"
+msgstr ""
+
+#: inc/jbst.php:658
+msgid "Display any of your menus."
+msgstr ""
+
+#: inc/jbst.php:687
+msgid "Title"
+msgstr ""
+
+#: inc/jbst.php:692
+msgid "ID: (no spaces)"
+msgstr ""
+
+#: inc/jbst.php:697
+msgid "Collapsible content areas."
+msgstr ""
+
+#: inc/jbst.php:714
+msgid "Icon"
+msgstr ""
+
+#: inc/jbst.php:730
+msgid "Size"
+msgstr ""
+
+#: inc/jbst.php:739
+msgid "Float"
+msgstr ""
+
+#: inc/jbst.php:744
+msgid "Color"
+msgstr ""
+
+#: inc/jbst.php:749
+msgid "210 icons"
+msgstr ""
+
+#: inc/shortcodes.php:3
+msgid "Twitter Bootstrap 3"
+msgstr ""
+
+#: twitterbootstrap-shortcodes-ultimate.php:116
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Twitter's Bootstrap Shortcodes Ultimate"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/bassjobsen/twitterbootstrap-shortcodes-ultimate"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add short codes for Twitter's Bootstrap 3 css and components to your site addon for Shortcodes Ultimate"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Bass Jobsen"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://bassjobsen.weblogs.fm/"
+msgstr ""
+
