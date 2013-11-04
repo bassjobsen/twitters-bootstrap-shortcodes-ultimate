@@ -105,7 +105,7 @@ public function init_settings()
 public function add_menu() 
 {
 	 
-	 add_options_page('Twitter\'s Bootstrap Shortcodes Ultimate', 'Bootstrap Shortcodes Ultimate', 'manage_options', 'jb-twitterbootstrap-shortcodes-ultimate', array(&$this, 'bootstrapshortcodesultimate_settings_page'));
+	 add_options_page('Twitter\'s Bootstrap Shortcodes Ultimate', 'Bootstrap Shortcodes Ultimate', 'manage_options', 'twitters-bootstrap-shortcodes-ultimate', array(&$this, 'bootstrapshortcodesultimate_settings_page'));
 } // END public function add_menu() 
 
 /** * Menu Callback */ 
