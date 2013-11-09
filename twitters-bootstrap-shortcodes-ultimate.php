@@ -4,7 +4,7 @@ Plugin Name: Twitter's Bootstrap Shortcodes Ultimate
 Depends: Shortcodes Ultimate
 Plugin URI: https://github.com/bassjobsen/twitterbootstrap-shortcodes-ultimate
 Description: Add short codes for Twitter's Bootstrap 3 css and components to your site addon for Shortcodes Ultimate
-Version: 1.0
+Version: 1.0.1
 Author: Bass Jobsen
 Author URI: http://bassjobsen.weblogs.fm/
 License: GPLv2
@@ -53,11 +53,7 @@ class Bootstrap_Shortcodes_Ultimate
 public function __construct() 
 { 
 	load_plugin_textdomain( 'bootstrapshortcodesultimate', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-	add_action('admin_menu', array(&$this, 'add_menu')); 
-	
-	
-	
-	add_filter( 'init', array( $this, 'init' ) );
+    add_filter( 'init', array( $this, 'init' ) );
 } 
 // END public 
 
@@ -101,31 +97,6 @@ public function init_settings()
 } // END public function init_custom_settings()
 
 
-/** * add a menu */ 
-public function add_menu() 
-{
-	 
-	 add_options_page('Twitter\'s Bootstrap Shortcodes Ultimate', 'Bootstrap Shortcodes Ultimate', 'manage_options', 'twitters-bootstrap-shortcodes-ultimate', array(&$this, 'bootstrapshortcodesultimate_settings_page'));
-} // END public function add_menu() 
-
-/** * Menu Callback */ 
-public function bootstrapshortcodesultimate_settings_page() 
-{ 
-	if(!current_user_can('manage_options')) 
-	{ 
-		wp_die(__('You do not have sufficient permissions to access this page.')); 
-	
-	} 
-// Render the settings template 
-
-include(sprintf("%s/templates/settings.php", dirname(__FILE__))); 
-
-} 
-// END public function plugin_settings_page() 
-
-	
-
-
 function init()
 {
 
@@ -140,7 +111,7 @@ function init()
 		if ( function_exists( 'shortcodes_ultimate' ) ) return;
 		?>
 		<div class="error">
-			<p>For full functionality of this theme you need to install and activate plugin <strong>Shortcodes Ultimate</strong>. <a href="<?php echo admin_url( 'plugin-install.php?tab=search&s=shortcodes+ultimate' ); ?>">Install now &rsaquo;</a></p>
+			<p>For full functionality of this plugin you need to install and activate plugin <strong>Shortcodes Ultimate</strong>. <a href="<?php echo admin_url( 'plugin-install.php?tab=search&s=shortcodes+ultimate' ); ?>">Install now &rsaquo;</a></p>
 		</div>
 		<?php
 	}
