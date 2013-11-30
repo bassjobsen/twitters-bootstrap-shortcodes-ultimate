@@ -32,12 +32,12 @@ Buttons
 				'text' => array(
 					'values' => array( ),
 					'default' => 'Button Text',
-					'desc' => __( 'Button Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Text', 'bootstrapshortcodesultimate' )
 				),
 				'url' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Button Link', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Link', 'bootstrapshortcodesultimate' )
 				),
 				'size' => array(
 					'values' => array(
@@ -48,7 +48,7 @@ Buttons
 						'large'
 					),
 					'default' => '',
-					'desc' => __( 'Button Size', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Size', 'bootstrapshortcodesultimate' )
 				),
 				'type' => array(
 					'values' => array(
@@ -62,14 +62,14 @@ Buttons
 						'inverse'
 					),
 					'default' => '',
-					'desc' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
 				),
 				'icon' => array(
 					'values' => array(
 						'','glass','music','search','envelope','heart','star','star-empty','user','film','th-large','th','th-list','ok','remove','zoom-in','zoom-out','off','signal','cog','trash','home','file','time','road','download-alt','download','upload','inbox','play-circle','repeat','refresh','list-alt','lock','flag','headphones','volume-off','volume-down','volume-up','qrcode','barcode','tag','tags','book','bookmark','print','camera','icon-font','bold','italic','text-height','text-width','align-left','align-center','align-right','align-justify','list','indent-left','indent-right','facetime-video','picture','pencil','map-marker','adjust','tint','edit','share','check','move','step-backward','fast-backward','backward','play','pause','stop','forward','fast-forward','step-forward','eject','chevron-left','chevron-right','plus-sign','minus-sign','remove-sign','ok-sign','question-sign','info-sign','screenshot','remove-circle','ok-circle','ban-circle','arrow-left','arrow-right','arrow-up','arrow-down','share-alt','resize-full','resize-small','plus','minus','asterisk','exclamation-sign','gift','leaf','fire','eye-open','eye-close','warning-sign','plane','calendar','random','comment','magnet','chevron-up','chevron-down','retweet','shopping-cart','folder-close','folder-open','resize-vertical','resize-horizontal','hdd','bullhorn','bell','certificate','thumbs-up','thumbs-down','hand-right','hand-left','hand-up','hand-down','circle-arrow-right','circle-arrow-left','circle-arrow-up','circle-arrow-down','globe','wrench','tasks','filter','briefcase','fullscreen'
 					),
 					'default' => '',
-					'desc' => __( 'Button Icon', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Icon', 'bootstrapshortcodesultimate' )
 				),
 				
 				'iconcolor' => array(
@@ -79,7 +79,7 @@ Buttons
 						'black'
 					),
 					'default' => '',
-					'desc' => __( 'Icon Color', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Icon Color', 'bootstrapshortcodesultimate' )
 				),
 				
 				'target' => array(
@@ -89,7 +89,7 @@ Buttons
 						'_blank'
 					),
 					'default' => '',
-					'desc' => __( 'Button Link Target', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Link Target', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[button url="" size="medium" type="default" text="Button Text" icon="default" target="_self" icon="image.png"]',
@@ -117,12 +117,12 @@ Labels
 						'inverse'
 					),
 					'default' => '',
-					'desc' => __( 'Label Style (color)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Label Style (color)', 'bootstrapshortcodesultimate' )
 				),
 				'text' => array(
 					'values' => array( ),
 					'default' => 'Label Text',
-					'desc' => __( 'Label Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Label Text', 'bootstrapshortcodesultimate' )
 				),
 			),
 			'usage' => '[label type="default" text="Label Text"]',
@@ -149,12 +149,12 @@ Badges
 						'inverse'
 					),
 					'default' => '1',
-					'desc' => __( 'Badge Style (color)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Badge Style (color)', 'bootstrapshortcodesultimate' )
 				),
 				'text' => array(
 					'values' => array( ),
 					'default' => 'Badge Text',
-					'desc' => __( 'Badge Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Badge Text', 'bootstrapshortcodesultimate' )
 				),
 			),
 			'usage' => '[badge type="default" text="Badge Text"]',
@@ -176,7 +176,7 @@ Code
 						'false'
 					),
 					'default' => 'false',
-					'desc' => __( 'Scroll', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Scroll', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[code] Content [/code]<br/>[code scroll="true"] Content [/code]',
@@ -222,7 +222,7 @@ Column
 						'11',
 						'12'
 					),
-					'desc' => __( 'Column Span.', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Column Span.', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[column]Content goes here[/column]',
@@ -247,7 +247,7 @@ Lead
 						'right'
 					),
 					'default' => 'Align',
-					'desc' => __( 'text alignment', 'bootstrapshortcodesultimate' )
+					'name' => __( 'text alignment', 'bootstrapshortcodesultimate' )
 				),
 			),
 			'usage' => '[lead][/lead]',
@@ -267,12 +267,12 @@ Page Header
 				'text' => array(
 					'values' => array( ),
 					'default' => 'Heading Text',
-					'desc' => __( 'Heading Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Heading Text', 'bootstrapshortcodesultimate' )
 				),
 				'subtext' => array(
 					'values' => array( ),
 					'default' => 'Sub Text',
-					'desc' => __( 'Sub Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Sub Text', 'bootstrapshortcodesultimate' )
 				),
 			),
 			'usage' => '[header text="Header Text" subtext="Sub Text"]',
@@ -304,16 +304,29 @@ Jumbotron
 			'atts' => array(
 					'background' => array(
 						'values' => array( ),
-						'default' => '#ffffff',
-						'desc' => __( 'Background color', 'bootstrapshortcodesultimate' ),
+						'default' => '#fff',
+						'name' => __( 'Background color', 'bootstrapshortcodesultimate' ),
 						'type' => 'color'
 					),
 					'color' => array(
 						'values' => array( ),
-						'default' => '#333333',
-						'desc' => __( 'Text Color', 'bootstrapshortcodesultimate' ),
+						'default' => '#333',
+						'name' => __( 'Text Color', 'bootstrapshortcodesultimate' ),
 						'type' => 'color'
+					),
+					'centered' => array(
+						'type' => 'switch',
+						'default' => 'yes',
+						'name' => __( 'Center content', 'bootstrapshortcodesultimate' ), 
+						'desc' => __( 'Center the content of the jumbotron', 'bootstrapshortcodesultimate' )
+					),
+					'fullwidth' => array(
+						'type' => 'switch',
+						'default' => 'no',
+						'name' => __( 'Full width', 'bootstrapshortcodesultimate' ), 
+						'desc' => __( 'Set the jumbotron full width, and without rounded corners', 'bootstrapshortcodesultimate' )
 					)
+
 			),
 			'usage' => '[jumbotron]Content goes here[/jumbotron]',
 			'content' => __( 'Content goes here', 'bootstrapshortcodesultimate' ),
@@ -333,7 +346,7 @@ Alert
 				'heading' => array(
 					'values' => array( ),
 					'default' => 'Alert Heading',
-					'desc' => __( 'Alert Heading', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Alert Heading', 'bootstrapshortcodesultimate' )
 				),
 				'type' => array(
 					'values' => array(
@@ -342,7 +355,7 @@ Alert
 						'alert-error'
 					),
 					'default' => 'alert-info',
-					'desc' => __( 'Alert Style', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Alert Style', 'bootstrapshortcodesultimate' )
 				),
 				'block' => array(
 					'values' => array(
@@ -350,7 +363,7 @@ Alert
 						'false'
 					),
 					'default' => 'false',
-					'desc' => __( 'Block Padding', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Block Padding', 'bootstrapshortcodesultimate' )
 				),
 				'close' => array(
 					'values' => array(
@@ -358,7 +371,7 @@ Alert
 						'false'
 					),
 					'default' => 'false',
-					'desc' => __( 'Close Button', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Close Button', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[alert type="alert-info" heading="Alert Heading" block="false" close="false"]Content[/alert]',
@@ -377,8 +390,8 @@ Blockquote
 			
 				'cite' => array(
 					'values' => array( ),
-					'default' => 'Author or source name',
-					'desc' => __( 'Blockquote Cite', 'bootstrapshortcodesultimate' )
+					'default' => __( 'Author or source name', 'bootstrapshortcodesultimate' ),
+					'name' => __( 'Blockquote Cite', 'bootstrapshortcodesultimate' )
 				),
 				'float' => array(
 					'values' => array(
@@ -387,7 +400,7 @@ Blockquote
 						'right'
 					),
 					'default' => 'left',
-					'desc' => __( 'Float (causes text wrap)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Float (causes text wrap)', 'bootstrapshortcodesultimate' )
 				),
 				'align' => array(
 					'values' => array(
@@ -395,7 +408,7 @@ Blockquote
 						'right'
 					),
 					'align' => 'left',
-					'desc' => __( 'Text Align', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Text Align', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[blockquote cite="Author or source name" float="left"]Blockquote content[/blockquote]',
@@ -414,22 +427,22 @@ Popovers
 				'text' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Text', 'bootstrapshortcodesultimate' )
 				),
 				'title' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Popover Title', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Popover Title', 'bootstrapshortcodesultimate' )
 				),
 				'desc' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Popover description', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Popover description', 'bootstrapshortcodesultimate' )
 				),
 				'link' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Link Url', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Link Url', 'bootstrapshortcodesultimate' )
 				),
 				'target' => array(
 					'values' => array(
@@ -437,7 +450,7 @@ Popovers
 						'_blank'
 					),
 					'default' => '_self',
-					'desc' => __( 'Link Target', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Link Target', 'bootstrapshortcodesultimate' )
 				),
 				'button' => array(
 					'values' => array(
@@ -445,7 +458,7 @@ Popovers
 						'false'
 					),
 					'default' => 'false',
-					'desc' => __( 'Button', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button', 'bootstrapshortcodesultimate' )
 				),
 				'size' => array(
 					'values' => array(
@@ -455,7 +468,7 @@ Popovers
 						'large'
 					),
 					'default' => 'medium',
-					'desc' => __( 'Button Size', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Size', 'bootstrapshortcodesultimate' )
 				),
 				'type' => array(
 					'values' => array(
@@ -468,7 +481,7 @@ Popovers
 						'inverse'
 					),
 					'default' => '1',
-					'desc' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[popover text="Popover Text" title="Popover Title" desc="Popover Description" link="" target="_self" button="false" size="medium" type="default"]',
@@ -487,17 +500,17 @@ Tooltip
 				'text' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Text', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Text', 'bootstrapshortcodesultimate' )
 				),
 				'title' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Tooltip description', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Tooltip description', 'bootstrapshortcodesultimate' )
 				),
 				'link' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Link Url', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Link Url', 'bootstrapshortcodesultimate' )
 				),
 				'target' => array(
 					'values' => array(
@@ -505,14 +518,14 @@ Tooltip
 						'_blank'
 					),
 					'default' => '_self',
-					'desc' => __( 'Link Target', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Link Target', 'bootstrapshortcodesultimate' )
 				),
 				'icon' => array(
 					'values' => array(
 						'none','glass','music','search','envelope','heart','star','star-empty','user','film','th-large','th','th-list','ok','remove','zoom-in','zoom-out','off','signal','cog','trash','home','file','time','road','download-alt','download','upload','inbox','play-circle','repeat','refresh','list-alt','lock','flag','headphones','volume-off','volume-down','volume-up','qrcode','barcode','tag','tags','book','bookmark','print','camera','icon-font','bold','italic','text-height','text-width','align-left','align-center','align-right','align-justify','list','indent-left','indent-right','facetime-video','picture','pencil','map-marker','adjust','tint','edit','share','check','move','step-backward','fast-backward','backward','play','pause','stop','forward','fast-forward','step-forward','eject','chevron-left','chevron-right','plus-sign','minus-sign','remove-sign','ok-sign','question-sign','info-sign','screenshot','remove-circle','ok-circle','ban-circle','arrow-left','arrow-right','arrow-up','arrow-down','share-alt','resize-full','resize-small','plus','minus','asterisk','exclamation-sign','gift','leaf','fire','eye-open','eye-close','warning-sign','plane','calendar','random','comment','magnet','chevron-up','chevron-down','retweet','shopping-cart','folder-close','folder-open','resize-vertical','resize-horizontal','hdd','bullhorn','bell','certificate','thumbs-up','thumbs-down','hand-right','hand-left','hand-up','hand-down','circle-arrow-right','circle-arrow-left','circle-arrow-up','circle-arrow-down','globe','wrench','tasks','filter','briefcase','fullscreen'
 					),
 					'default' => 'default',
-					'desc' => __( 'Button Icon', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Icon', 'bootstrapshortcodesultimate' )
 				),
 				'iconcolor' => array(
 					'values' => array(
@@ -520,7 +533,7 @@ Tooltip
 						'black'
 					),
 					'default' => 'white',
-					'desc' => __( 'Icon Color', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Icon Color', 'bootstrapshortcodesultimate' )
 				),
 				'button' => array(
 					'values' => array(
@@ -528,7 +541,7 @@ Tooltip
 						'false'
 					),
 					'default' => 'false',
-					'desc' => __( 'Button', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button', 'bootstrapshortcodesultimate' )
 				),
 				'size' => array(
 					'values' => array(
@@ -538,7 +551,7 @@ Tooltip
 						'large'
 					),
 					'default' => 'medium',
-					'desc' => __( 'Button Size', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Size', 'bootstrapshortcodesultimate' )
 				),
 				'type' => array(
 					'values' => array(
@@ -551,7 +564,7 @@ Tooltip
 						'inverse'
 					),
 					'default' => '1',
-					'desc' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[tooltip text="Tooltip Text" title="Tooltip Title" link="" target="_self" icon="default" button="false" size="medium" type="default"]',
@@ -570,7 +583,7 @@ Progress Bar
 				'width' => array(
 					'values' => array( ),
 					'default' => '25',
-					'desc' => __( 'Percentage of Progress', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Percentage of Progress', 'bootstrapshortcodesultimate' )
 				),
 				'striped' => array(
 					'values' => array(
@@ -578,7 +591,7 @@ Progress Bar
 						'off'
 					),
 					'default' => 'off',
-					'desc' => __( 'Striped', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Striped', 'bootstrapshortcodesultimate' )
 				),
 				'animate' => array(
 					'values' => array(
@@ -586,7 +599,7 @@ Progress Bar
 						'off'
 					),
 					'default' => 'off',
-					'desc' => __( 'Animate (requires striped)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Animate (requires striped)', 'bootstrapshortcodesultimate' )
 				),
 				'type' => array(
 					'values' => array(
@@ -597,7 +610,7 @@ Progress Bar
 						'danger'
 					),
 					'default' => 'info',
-					'desc' => __( 'Style (color)', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Style (color)', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[progress width="25" animate="off" striped="off" type="off"]',
@@ -616,12 +629,12 @@ Carousel
 				'include' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Include specific image IDs', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Include specific image IDs', 'bootstrapshortcodesultimate' )
 				),
 				'exclude' => array(
 					'values' => array( ),
 					'default' => '',
-					'desc' => __( 'Exclude specific image IDs', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Exclude specific image IDs', 'bootstrapshortcodesultimate' )
 				)
 			),
 			'usage' => '[carousel_gallery include="" exclude=""]',
@@ -643,7 +656,7 @@ Menu
 						'tabs'
 					),
 					'default' => 'pills',
-					'desc' => __( 'Style', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Style', 'bootstrapshortcodesultimate' )
 				),
 				'stacked' => array(
 					'values' => array(
@@ -651,7 +664,7 @@ Menu
 						'false'
 					),
 					'default' => 'false',
-					'desc' => __( 'Stacked Vertically', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Stacked Vertically', 'bootstrapshortcodesultimate' )
 				),
 			),
 			'usage' => '[menu]',
@@ -684,12 +697,12 @@ Accordion
 					'title' => array(
 						'values' => array( ),
 						'default' => 'Title here',
-						'desc' => __( 'Title', 'bootstrapshortcodesultimate' ),
+						'name' => __( 'Title', 'bootstrapshortcodesultimate' ),
 					),
 					'id' => array(
 						'values' => array( ),
 						'default' => 'id-here',
-						'desc' => __( 'ID: (no spaces)', 'bootstrapshortcodesultimate' ),
+						'name' => __( 'ID: (no spaces)', 'bootstrapshortcodesultimate' ),
 					)
 			),
 			'usage' => '[accordion title="Title Goes Here" id="IDHere"]Content goes here[/accordion]',
@@ -711,7 +724,7 @@ Icons
 						'none','glass','music','search','envelope','heart','star','star-empty','user','film','th-large','th','th-list','ok','remove','zoom-in','zoom-out','off','signal','cog','trash','home','file','time','road','download-alt','download','upload','inbox','play-circle','repeat','refresh','list-alt','lock','flag','headphones','volume-off','volume-down','volume-up','qrcode','barcode','tag','tags','book','bookmark','print','camera','icon-font','bold','italic','text-height','text-width','align-left','align-center','align-right','align-justify','list','indent-left','indent-right','facetime-video','picture','pencil','map-marker','adjust','tint','edit','share','check','move','step-backward','fast-backward','backward','play','pause','stop','forward','fast-forward','step-forward','eject','chevron-left','chevron-right','plus-sign','minus-sign','remove-sign','ok-sign','question-sign','info-sign','screenshot','remove-circle','ok-circle','ban-circle','arrow-left','arrow-right','arrow-up','arrow-down','share-alt','resize-full','resize-small','plus','minus','asterisk','exclamation-sign','gift','leaf','fire','eye-open','eye-close','warning-sign','plane','calendar','random','comment','magnet','chevron-up','chevron-down','retweet','shopping-cart','folder-close','folder-open','resize-vertical','resize-horizontal','hdd','bullhorn','bell','certificate','thumbs-up','thumbs-down','hand-right','hand-left','hand-up','hand-down','circle-arrow-right','circle-arrow-left','circle-arrow-up','circle-arrow-down','globe','wrench','tasks','filter','briefcase','fullscreen'
 					),
 					'default' => 'default',
-					'desc' => __( 'Icon', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Icon', 'bootstrapshortcodesultimate' )
 				),
 				
 				'size' => array(
@@ -727,7 +740,7 @@ Icons
 						'96',
 					),
 					'default' => 'default',
-					'desc' => __( 'Size', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Size', 'bootstrapshortcodesultimate' )
 				),
 				'float' => array(
 					'values' => array(
@@ -736,12 +749,12 @@ Icons
 						'right'
 					),
 					'default' => 'none',
-					'desc' => __( 'Float', 'bootstrapshortcodesultimate' )
+					'name' => __( 'Float', 'bootstrapshortcodesultimate' )
 				),
 				'color' => array(
 					'values' => array( ),
 					'default' => 'default',
-					'desc' => __( 'Color', 'bootstrapshortcodesultimate' ),
+					'name' => __( 'Color', 'bootstrapshortcodesultimate' ),
 					'type' => 'color'
 				)
 			),

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Twitter's Bootstrap 3, short codes, shortcodes ultimate
 Requires at least: 3.6
 Tested up to: 3.7.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ If you have suggestions for a new feature or improvement, feel free to contact u
 1. Twitter's Bootstrap Shortcodes Ultimate
 
 == Changelog ==
+
+= 1.0.1 =
+* Remove admin menu
 
 = 1.0 =
 * First version

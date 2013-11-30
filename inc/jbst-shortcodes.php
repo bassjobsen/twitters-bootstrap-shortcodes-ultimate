@@ -23,7 +23,7 @@ function skematik_register_shortcodes() {
 		$output .= '</div>';	
 		return $output;}
 	
-	add_shortcode('button_group', 'skematik_shortcode_button_group');
+	add_shortcode(su_cmpt() . 'button_group', 'skematik_shortcode_button_group');
 	
 	/*
 	==========================================================
@@ -70,7 +70,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('button', 'skematik_shortcode_buttons'); 
+	add_shortcode(su_cmpt() . 'button', 'skematik_shortcode_buttons'); 
 	
 	/*
 	==========================================================
@@ -97,7 +97,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('label', 'skematik_shortcode_labels');
+	add_shortcode(su_cmpt() . 'label', 'skematik_shortcode_labels');
 	
 	/*
 	==========================================================
@@ -124,7 +124,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('badge', 'skematik_shortcode_badges'); 
+	add_shortcode(su_cmpt() . 'badge', 'skematik_shortcode_badges'); 
 	
 	/*
 	==========================================================
@@ -148,7 +148,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('code', 'skematik_shortcode_code');
+	add_shortcode(su_cmpt() . 'code', 'skematik_shortcode_code');
 	
 	/*
 	==========================================================
@@ -162,7 +162,7 @@ function skematik_register_shortcodes() {
 		$output .= '</div>';	
 		return $output;}
 	
-	add_shortcode('row', 'skematik_shortcode_row');
+	add_shortcode(su_cmpt() . 'row', 'skematik_shortcode_row');
 	
 	/*
 	==========================================================
@@ -179,7 +179,7 @@ function skematik_register_shortcodes() {
 		$output .= '</div>';	
 		return $output;}
 	
-	add_shortcode('column', 'skematik_shortcode_columns');
+	add_shortcode(su_cmpt() . 'column', 'skematik_shortcode_columns');
 	
 	/*
 	==========================================================
@@ -204,7 +204,7 @@ function skematik_register_shortcodes() {
 		$output .= '</p>';	
 		return $output;}
 	
-	add_shortcode('lead', 'skematik_shortcode_lead');
+	add_shortcode(su_cmpt() . 'lead', 'skematik_shortcode_lead');
 	
 	/*
 	==========================================================
@@ -231,7 +231,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('header', 'skematik_shortcode_header');
+	add_shortcode(su_cmpt() . 'header', 'skematik_shortcode_header');
 	
 	/*
 	==========================================================
@@ -243,7 +243,7 @@ function skematik_register_shortcodes() {
 		$output = '<ul class="nav nav-list"><li class="divider page-divider"></li></ul>';
 		return $output;}
 	
-	add_shortcode('divider', 'skematik_shortcode_divider');
+	add_shortcode(su_cmpt() . 'divider', 'skematik_shortcode_divider');
 	
 	/*
 	==========================================================
@@ -251,18 +251,24 @@ function skematik_register_shortcodes() {
 	==========================================================
 	*/
 	function skematik_shortcode_jumbotron( $atts, $content ) {
+		
+	
 		extract( shortcode_atts( array(
-		'background' => '', /* alert-info, alert-success, alert-error */ 
-		'color' => '', 
-	
+		'background' => '#fff', 
+		'color' => '#333', 
+	    'centered' => 'yes', 
+	    'fullwidth' => 'no'
 		), $atts ) );
-	
-		$output = '<header style="background:'.$background.';color:'.$color.';" class="hero-unit jumbotron masthead">';
+		
+		$output = '<div class="jumbotron" style="background:'.$background.';color:'.$color.';'.(($centered==='yes')?'text-align:center;':'').'">';
+		if($fullwidth === 'yes') $output .= '<div class="container">';
 		$output .= do_shortcode( $content );
-		$output .= '</header>';	
-		return $output;}
+		if($fullwidth === 'yes') $output .= '</div>';
+		$output .= '</div>';
+		return $output;
+		}
 	
-	add_shortcode('jumbotron', 'skematik_shortcode_jumbotron');
+	add_shortcode(su_cmpt() . 'jumbotron', 'skematik_shortcode_jumbotron');
 	
 	/*
 	==========================================================
@@ -291,7 +297,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('alert', 'skematik_shortcode_alerts');
+	add_shortcode(su_cmpt() . 'alert', 'skematik_shortcode_alerts');
 	
 	
 	/*
@@ -330,7 +336,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('blockquote', 'skematik_shortcode_blockquotes'); 
+	add_shortcode(su_cmpt() . 'blockquote', 'skematik_shortcode_blockquotes'); 
 	
 	/*
 	==========================================================
@@ -373,7 +379,7 @@ function skematik_register_shortcodes() {
 		$output .= '</a>';
 		return $output;}
 	
-	add_shortcode('tooltip', 'skematik_shortcode_tooltip');
+	add_shortcode(su_cmpt() . 'tooltip', 'skematik_shortcode_tooltip');
 	
 	/*
 	==========================================================
@@ -407,7 +413,7 @@ function skematik_register_shortcodes() {
 		$output .= '</a>';	
 		return $output;}
 	
-	add_shortcode('popover', 'skematik_shortcode_popover');
+	add_shortcode(su_cmpt() . 'popover', 'skematik_shortcode_popover');
 	
 	/*
 	==========================================================
@@ -445,7 +451,7 @@ function skematik_register_shortcodes() {
 		$output = '<div class="progress '.$type.' '.$striped.' '.$animate.'"><div class="bar" style="width:'.$width.'%;"></div></div>';
 		return $output;}
 	
-	add_shortcode('progress', 'skematik_shortcode_progress_bar');
+	add_shortcode(su_cmpt() . 'progress', 'skematik_shortcode_progress_bar');
 	
 	/*
 	==========================================================
@@ -493,7 +499,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('carousel_gallery', 'skematik_shortcode_carousel_gallery');
+	add_shortcode(su_cmpt() . 'carousel_gallery', 'skematik_shortcode_carousel_gallery');
 	
 	/*
 	==========================================================
@@ -521,7 +527,7 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('menu', 'skematik_shortcode_menu');
+	add_shortcode(su_cmpt() . 'menu', 'skematik_shortcode_menu');
 	
 	/*
 	==========================================================
@@ -540,7 +546,7 @@ function skematik_register_shortcodes() {
 		$output .= '</div></div></div>';
 		return $output;}
 	
-	add_shortcode('accordion', 'skematik_shortcode_accordion');
+	add_shortcode(su_cmpt() . 'accordion', 'skematik_shortcode_accordion');
 	
 	/*
 	==========================================================
@@ -554,7 +560,7 @@ function skematik_register_shortcodes() {
 		$output .= '</div>';	
 		return $output;}
 	
-	add_shortcode('accordion_group', 'skematik_shortcode_accordion_group');
+	add_shortcode(su_cmpt() . 'accordion_group', 'skematik_shortcode_accordion_group');
 	
 	/*
 	==========================================================
@@ -598,5 +604,5 @@ function skematik_register_shortcodes() {
 		return $output;
 	}
 	
-	add_shortcode('icon', 'skematik_shortcode_icon');
+	add_shortcode(su_cmpt() . 'icon', 'skematik_shortcode_icon');
 } /* End skematik_register_shortcodes function */
