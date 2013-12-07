@@ -31,11 +31,13 @@ License: GPLv2
 /**
  * Check if Shortcodes Ultimate is active
  **/
-if ( !in_array( 'shortcodes-ultimate/shortcodes-ultimate.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) 
-{
+//if ( !in_array( 'shortcodes-ultimate/shortcodes-ultimate.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) 
+//{
 // Put your plugin code here
-die('install Shortcodes Ultimate first');
-}
+//die('install Shortcodes Ultimate first');
+//}
+
+/* add new check, see: http://ottopress.com/2012/themeplugin-dependencies/*/
 
 // Includes
 require_once 'inc/jbst.php';
