@@ -30,8 +30,7 @@ Buttons
 			'type' => 'single',
 			'atts' => array(
 				'text' => array(
-					'values' => array( ),
-					'default' => 'Button Text',
+					'default' => '',
 					'name' => __( 'Button Text', 'bootstrapshortcodesultimate' )
 				),
 				'url' => array(
@@ -40,39 +39,40 @@ Buttons
 					'name' => __( 'Button Link', 'bootstrapshortcodesultimate' )
 				),
 				'size' => array(
+				    'type' => 'select',
+				    'default'=>'default', 
 					'values' => array(
-						'',
-						'mini',
-						'small',
-						'medium',
-						'large'
+						'xs' =>__( 'Extra small', 'bootstrapshortcodesultimate' ),
+						'sm' =>__( 'Small', 'bootstrapshortcodesultimate' ),
+						'default' =>__( 'Default', 'bootstrapshortcodesultimate' ),
+						'lg' =>__( 'Large', 'bootstrapshortcodesultimate' )
 					),
-					'default' => '',
 					'name' => __( 'Button Size', 'bootstrapshortcodesultimate' )
 				),
 				'type' => array(
+				    'type'=>'select',
 					'values' => array(
-						'',
-						'primary',
-						'default',
-						'info',
-						'success',
-						'danger',
-						'warning',
-						'inverse'
+						'primary'=>'Primary',
+						'default'=>'Default',
+						'info'=>'Info',
+						'success'=>'Success',
+						'danger'=>'Danger',
+						'warning'=>'Warning',
+						'inverse'=>'Inverse',
+						'link'=>'Link'
 					),
-					'default' => '',
+					'default' => 'default',
 					'name' => __( 'Button Style (color)', 'bootstrapshortcodesultimate' )
 				),
 				'icon' => array(
-					'values' => array(
-						'','glass','music','search','envelope','heart','star','star-empty','user','film','th-large','th','th-list','ok','remove','zoom-in','zoom-out','off','signal','cog','trash','home','file','time','road','download-alt','download','upload','inbox','play-circle','repeat','refresh','list-alt','lock','flag','headphones','volume-off','volume-down','volume-up','qrcode','barcode','tag','tags','book','bookmark','print','camera','icon-font','bold','italic','text-height','text-width','align-left','align-center','align-right','align-justify','list','indent-left','indent-right','facetime-video','picture','pencil','map-marker','adjust','tint','edit','share','check','move','step-backward','fast-backward','backward','play','pause','stop','forward','fast-forward','step-forward','eject','chevron-left','chevron-right','plus-sign','minus-sign','remove-sign','ok-sign','question-sign','info-sign','screenshot','remove-circle','ok-circle','ban-circle','arrow-left','arrow-right','arrow-up','arrow-down','share-alt','resize-full','resize-small','plus','minus','asterisk','exclamation-sign','gift','leaf','fire','eye-open','eye-close','warning-sign','plane','calendar','random','comment','magnet','chevron-up','chevron-down','retweet','shopping-cart','folder-close','folder-open','resize-vertical','resize-horizontal','hdd','bullhorn','bell','certificate','thumbs-up','thumbs-down','hand-right','hand-left','hand-up','hand-down','circle-arrow-right','circle-arrow-left','circle-arrow-up','circle-arrow-down','globe','wrench','tasks','filter','briefcase','fullscreen'
-					),
+					'type'=>'select',
+			
+					'values' => array(''=>'','glass'=>'glass','music'=>'music','search'=>'search','envelope'=>'envelope','heart'=>'heart','star'=>'star','star-empty'=>'star-empty','user'=>'user','film'=>'film','th-large'=>'th-large','th'=>'th','th-list'=>'th-list','ok'=>'ok','remove'=>'remove','zoom-in'=>'zoom-in','zoom-out'=>'zoom-out','off'=>'off','signal'=>'signal','cog'=>'cog','trash'=>'trash','home'=>'home','file'=>'file','time'=>'time','road'=>'road','download-alt'=>'download-alt','download'=>'download','upload'=>'upload','inbox'=>'inbox','play-circle'=>'play-circle','repeat'=>'repeat','refresh'=>'refresh','list-alt'=>'list-alt','lock'=>'lock','flag'=>'flag','headphones'=>'headphones','volume-off'=>'volume-off','volume-down'=>'volume-down','volume-up'=>'volume-up','qrcode'=>'qrcode','barcode'=>'barcode','tag'=>'tag','tags'=>'tags','book'=>'book','bookmark'=>'bookmark','print'=>'print','camera'=>'camera','icon-font'=>'icon-font','bold'=>'bold','italic'=>'italic','text-height'=>'text-height','text-width'=>'text-width','align-left'=>'align-left','align-center'=>'align-center','align-right'=>'align-right','align-justify'=>'align-justify','list'=>'list','indent-left'=>'indent-left','indent-right'=>'indent-right','facetime-video'=>'facetime-video','picture'=>'picture','pencil'=>'pencil','map-marker'=>'map-marker','adjust'=>'adjust','tint'=>'tint','edit'=>'edit','share'=>'share','check'=>'check','move'=>'move','step-backward'=>'step-backward','fast-backward'=>'fast-backward','backward'=>'backward','play'=>'play','pause'=>'pause','stop'=>'stop','forward'=>'forward','fast-forward'=>'fast-forward','step-forward'=>'step-forward','eject'=>'eject','chevron-left'=>'chevron-left','chevron-right'=>'chevron-right','plus-sign'=>'plus-sign','minus-sign'=>'minus-sign','remove-sign'=>'remove-sign','ok-sign'=>'ok-sign','question-sign'=>'question-sign','info-sign'=>'info-sign','screenshot'=>'screenshot','remove-circle'=>'remove-circle','ok-circle'=>'ok-circle','ban-circle'=>'ban-circle','arrow-left'=>'arrow-left','arrow-right'=>'arrow-right','arrow-up'=>'arrow-up','arrow-down'=>'arrow-down','share-alt'=>'share-alt','resize-full'=>'resize-full','resize-small'=>'resize-small','plus'=>'plus','minus'=>'minus','asterisk'=>'asterisk','exclamation-sign'=>'exclamation-sign','gift'=>'gift','leaf'=>'leaf','fire'=>'fire','eye-open'=>'eye-open','eye-close'=>'eye-close','warning-sign'=>'warning-sign','plane'=>'plane','calendar'=>'calendar','random'=>'random','comment'=>'comment','magnet'=>'magnet','chevron-up'=>'chevron-up','chevron-down'=>'chevron-down','retweet'=>'retweet','shopping-cart'=>'shopping-cart','folder-close'=>'folder-close','folder-open'=>'folder-open','resize-vertical'=>'resize-vertical','resize-horizontal'=>'resize-horizontal','hdd'=>'hdd','bullhorn'=>'bullhorn','bell'=>'bell','certificate'=>'certificate','thumbs-up'=>'thumbs-up','thumbs-down'=>'thumbs-down','hand-right'=>'hand-right','hand-left'=>'hand-left','hand-up'=>'hand-up','hand-down'=>'hand-down','circle-arrow-right'=>'circle-arrow-right','circle-arrow-left'=>'circle-arrow-left','circle-arrow-up'=>'circle-arrow-up','circle-arrow-down'=>'circle-arrow-down','globe'=>'globe','wrench'=>'wrench','tasks'=>'tasks','filter'=>'filter','briefcase'=>'briefcase','fullscreen'=>'fullscreen'),
 					'default' => '',
 					'name' => __( 'Button Icon', 'bootstrapshortcodesultimate' )
 				),
 				
-				'iconcolor' => array(
+				/*'iconcolor' => array(
 					'values' => array(
 						'',
 						'white',
@@ -80,19 +80,20 @@ Buttons
 					),
 					'default' => '',
 					'name' => __( 'Icon Color', 'bootstrapshortcodesultimate' )
-				),
+				),*/
 				
 				'target' => array(
+					'type'=>'select',
 					'values' => array(
-						'',
-						'_self',
-						'_blank'
+						''=>'',
+						'_self'=>'_self',
+						'_blank'=>'_blank'
 					),
 					'default' => '',
 					'name' => __( 'Button Link Target', 'bootstrapshortcodesultimate' )
 				)
 			),
-			'usage' => '[button url="" size="medium" type="default" text="Button Text" icon="default" target="_self" icon="image.png"]',
+			'usage' => '[button url="" size="lg" type="default" text="Button Text" icon="default" target="_self"]',
 			'desc' => __( '3 sizes, 7 colors and 140 icons', 'bootstrapshortcodesultimate' )
 		),
 		

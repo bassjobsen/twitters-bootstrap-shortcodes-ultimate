@@ -33,33 +33,28 @@ function skematik_register_shortcodes() {
 	function skematik_shortcode_buttons( $atts, $content = null ) {
 		extract( shortcode_atts( array(
 		'type' => 'default', /* primary, default, info, success, danger, warning, inverse */
-		'size' => 'medium', /* small, medium, large */
+		'size' => 'default', /* small, medium, large */
 		'url'  => '',
 		'text' => '',
-		'icon' => 'default',
-		'iconcolor' => 'white',
-		'target' => '_self',
+		'icon' => '',
+		'target' => '',
 		), $atts ) );
 		
-		if($type == "default"){
-			$type = "";
-		}
-		else{ 
-			$type = "btn-" . $type;
-		}
+		$type = "btn-" . $type;
+
 		
-		if($size == "medium"){
+		if($size == "default"){
 			$size = "";
 		}
 		else{
 			$size = "btn-" . $size;
 		}
 		
-		if($icon == 'default'){
+		if($icon == ''){
 			$icon = '';
 		}
-		else{
-			$icon = '<i class="glyphicon glyphicon-'. $icon . ' icon-'. $iconcolor . '"></i> ';
+		if(!empty($icon)){
+			$icon = '<i class="glyphicon glyphicon-' . $icon . '"></i> ';
 		}
 		
 		$output = '<a href="' . $url . '" target="' . $target . '" class="btn '. $type . ' ' . $size . '">';

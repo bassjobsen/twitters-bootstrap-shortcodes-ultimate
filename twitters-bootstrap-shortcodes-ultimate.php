@@ -4,7 +4,7 @@ Plugin Name: Twitter's Bootstrap Shortcodes Ultimate
 Depends: Shortcodes Ultimate
 Plugin URI: https://github.com/bassjobsen/twitterbootstrap-shortcodes-ultimate
 Description: Add short codes for Twitter's Bootstrap 3 css and components to your site addon for Shortcodes Ultimate
-Version: 1.0.2
+Version: 1.0.3
 Author: Bass Jobsen
 Author URI: http://bassjobsen.weblogs.fm/
 License: GPLv2
@@ -31,12 +31,14 @@ License: GPLv2
 /**
  * Check if Shortcodes Ultimate is active
  **/
-//if ( !in_array( 'shortcodes-ultimate/shortcodes-ultimate.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) 
-//{
-// Put your plugin code here
+if ( !in_array( 'shortcodes-ultimate/shortcodes-ultimate.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) 
+{
+//Put your plugin code here
 //die('install Shortcodes Ultimate first');
-//}
 
+}
+else
+{
 /* add new check, see: http://ottopress.com/2012/themeplugin-dependencies/*/
 
 // Includes
@@ -137,3 +139,4 @@ if(class_exists('Bootstrap_Shortcodes_Ultimate'))
 	new Bootstrap_Shortcodes_Ultimate();
 }
 
+}
