@@ -1,4 +1,4 @@
-<?
+<?php
 function tbusc_add_group( $groups ) {
        $groups['twitterboostrap'] = __( 'Twitter Bootstrap 3', 'bootstrapshortcodesultimate' );
         return $groups;

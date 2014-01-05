@@ -4,7 +4,7 @@ Plugin Name: Twitter's Bootstrap Shortcodes Ultimate
 Depends: Shortcodes Ultimate
 Plugin URI: https://github.com/bassjobsen/twitterbootstrap-shortcodes-ultimate
 Description: Add short codes for Twitter's Bootstrap 3 css and components to your site addon for Shortcodes Ultimate
-Version: 1.0.3
+Version: 1.0.4
 Author: Bass Jobsen
 Author URI: http://bassjobsen.weblogs.fm/
 License: GPLv2
